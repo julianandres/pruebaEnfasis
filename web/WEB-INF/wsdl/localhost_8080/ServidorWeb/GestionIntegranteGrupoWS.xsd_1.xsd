@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://logicaServicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://logicaServicios/">
+
+<xs:element name="agregarIntegranteAGrupo" type="tns:agregarIntegranteAGrupo"/>
+
+<xs:element name="agregarIntegranteAGrupoResponse" type="tns:agregarIntegranteAGrupoResponse"/>
+
+<xs:element name="consultarIntegranteGrupo" type="tns:consultarIntegranteGrupo"/>
+
+<xs:element name="consultarIntegranteGrupoResponse" type="tns:consultarIntegranteGrupoResponse"/>
+
+<xs:element name="crearIntegranteGrupo" type="tns:crearIntegranteGrupo"/>
+
+<xs:element name="crearIntegranteGrupoResponse" type="tns:crearIntegranteGrupoResponse"/>
+
+<xs:element name="editarIntegranteGrupo" type="tns:editarIntegranteGrupo"/>
+
+<xs:element name="editarIntegranteGrupoResponse" type="tns:editarIntegranteGrupoResponse"/>
+
+<xs:element name="eliminarIntegranteGrupo" type="tns:eliminarIntegranteGrupo"/>
+
+<xs:element name="eliminarIntegranteGrupoResponse" type="tns:eliminarIntegranteGrupoResponse"/>
+
+<xs:element name="removerIntegranteDeGrupo" type="tns:removerIntegranteDeGrupo"/>
+
+<xs:element name="removerIntegranteDeGrupoResponse" type="tns:removerIntegranteDeGrupoResponse"/>
+
+<xs:complexType name="eliminarIntegranteGrupo">
+<xs:sequence>
+<xs:element name="codigoIntegranteAEliminar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarIntegranteGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removerIntegranteDeGrupo">
+<xs:sequence>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoIntegrante" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removerIntegranteDeGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarIntegranteGrupo">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaNacimiento" type="xs:string" minOccurs="0"/>
+<xs:element name="infoAdicional" type="xs:string" minOccurs="0"/>
+<xs:element name="codigosGruposQuePertenece" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarIntegranteGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearIntegranteGrupo">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaNacimiento" type="xs:string" minOccurs="0"/>
+<xs:element name="infoAdicional" type="xs:string" minOccurs="0"/>
+<xs:element name="codigosGruposQuePertenece" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearIntegranteGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarIntegranteGrupo">
+<xs:sequence>
+<xs:element name="codigoIntegranteAEditar" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaNacimiento" type="xs:string" minOccurs="0"/>
+<xs:element name="infoAdicional" type="xs:string" minOccurs="0"/>
+<xs:element name="codigosGruposQuePertenece" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarIntegranteGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarIntegranteAGrupo">
+<xs:sequence>
+<xs:element name="codigoGrupoAsignar" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoIntegranteAsignar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarIntegranteAGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

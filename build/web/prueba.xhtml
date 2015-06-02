@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      
+          
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+                                    <p:dataTable  
+                                        value="#{grupoMB.gruposByEvaluador}"
+                                        id="gruposId"         
+                                        var="grupoAs" 
+                                        selectionMode="single"
+                                        selection="#{grupoMB.selGrupo}"           
+                                        rowKey="#{grupoAs.codEvaluador}"                                                   
+                                                  >
+                                        <f:facet name="header">
+                                            Mis Grupos
+                                        </f:facet>
+                                        <p:column headerText="Código grupo">
+                                            <h:outputText value="#{grupoAs.codigo}" />
+                                        </p:column>
+
+                                        <p:column headerText="Nombre">
+                                            <h:outputText value="#{grupoAs.nombre}" />
+                                        </p:column>
+                                        
+                                        <p:column headerText="Código de competencia objetivo">
+                                            <h:outputText value="#{grupoAs.codigosCompetenciasObjetivo}" />
+                                        </p:column>
+
+                                        <p:column headerText="Descripción">
+                                            <h:outputText value="#{grupoAs.descripcion}" />
+                                        </p:column>
+
+                                        <p:column headerText="Código evaluador">
+                                            <h:outputText value="#{grupoMB.codEvaluador}" />
+                                        </p:column>
+
+                                        <p:column headerText="Código integrante de grupo">
+                                            <h:outputText value="#{grupoMB.codigosIntegrantesGrupo}" />
+                                        </p:column>
+                                    </p:dataTable>
+                                     <p:commandLink value="Link" action="#{grupoMB.mostrarCrearGrupo()}"/> >
+                                </h:form>
+    </h:body>
+</html>
+

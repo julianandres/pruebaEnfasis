@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://logicaServicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://logicaServicios/">
+
+<xs:element name="consultarActividadEvaluacion" type="tns:consultarActividadEvaluacion"/>
+
+<xs:element name="consultarActividadEvaluacionResponse" type="tns:consultarActividadEvaluacionResponse"/>
+
+<xs:element name="crearActividadEvaluacion" type="tns:crearActividadEvaluacion"/>
+
+<xs:element name="crearActividadEvaluacionResponse" type="tns:crearActividadEvaluacionResponse"/>
+
+<xs:element name="editarActividadEvaluacion" type="tns:editarActividadEvaluacion"/>
+
+<xs:element name="editarActividadEvaluacionResponse" type="tns:editarActividadEvaluacionResponse"/>
+
+<xs:element name="eliminarActividadEvaluacion" type="tns:eliminarActividadEvaluacion"/>
+
+<xs:element name="eliminarActividadEvaluacionResponse" type="tns:eliminarActividadEvaluacionResponse"/>
+
+<xs:complexType name="eliminarActividadEvaluacion">
+<xs:sequence>
+<xs:element name="codigoAeliminar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarActividadEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarActividadEvaluacion">
+<xs:sequence>
+<xs:element name="codigoBusqueda" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaRealizacion" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEscala" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoGrupoRealizacion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarActividadEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarActividadEvaluacion">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaRealizacion" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEscala" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoGrupoRealizacion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarActividadEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearActividadEvaluacion">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaRealizacion" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEscala" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoGrupoRealizacion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearActividadEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

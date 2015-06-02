@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://logicaServicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://logicaServicios/">
+
+<xs:element name="consultarEscalaEvaluacion" type="tns:consultarEscalaEvaluacion"/>
+
+<xs:element name="consultarEscalaEvaluacionResponse" type="tns:consultarEscalaEvaluacionResponse"/>
+
+<xs:element name="crearEscalaEvaluacion" type="tns:crearEscalaEvaluacion"/>
+
+<xs:element name="crearEscalaEvaluacionResponse" type="tns:crearEscalaEvaluacionResponse"/>
+
+<xs:element name="editarEscalaEvaluacion" type="tns:editarEscalaEvaluacion"/>
+
+<xs:element name="editarEscalaEvaluacionResponse" type="tns:editarEscalaEvaluacionResponse"/>
+
+<xs:element name="eliminarCompetencia" type="tns:eliminarCompetencia"/>
+
+<xs:element name="eliminarCompetenciaResponse" type="tns:eliminarCompetenciaResponse"/>
+
+<xs:complexType name="crearEscalaEvaluacion">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="nivelesLinguisticos" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearEscalaEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarEscalaEvaluacion">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="nivelesLinguisticos" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarEscalaEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarEscalaEvaluacion">
+<xs:sequence>
+<xs:element name="codigoEscalaAEditar" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="nivelesLinguisticos" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarEscalaEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarCompetencia">
+<xs:sequence>
+<xs:element name="codigoCompetenciaAEliminar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarCompetenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

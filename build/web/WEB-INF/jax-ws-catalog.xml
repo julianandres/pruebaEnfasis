@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ServidorWeb/GestionEvaluadorWS?WSDL" uri="wsdl/localhost_8080/ServidorWeb/GestionEvaluadorWS.wsdl"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionEvaluadorWS?xsd=1" uri="wsdl/localhost_8080/ServidorWeb/GestionEvaluadorWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionCompetenciaWS?WSDL" uri="wsdl/localhost_8080/ServidorWeb/GestionCompetenciaWS.wsdl"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionCompetenciaWS?xsd=1" uri="wsdl/localhost_8080/ServidorWeb/GestionCompetenciaWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionGrupoEvaluacionWS?WSDL" uri="wsdl/localhost_8080/ServidorWeb/GestionGrupoEvaluacionWS.wsdl"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionGrupoEvaluacionWS?xsd=1" uri="wsdl/localhost_8080/ServidorWeb/GestionGrupoEvaluacionWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionActividadEvaluacionWS?WSDL" uri="wsdl/localhost_8080/ServidorWeb/GestionActividadEvaluacionWS.wsdl"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionActividadEvaluacionWS?xsd=1" uri="wsdl/localhost_8080/ServidorWeb/GestionActividadEvaluacionWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionEscalaEvaluacionWS?WSDL" uri="wsdl/localhost_8080/ServidorWeb/GestionEscalaEvaluacionWS.wsdl"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionEscalaEvaluacionWS?xsd=1" uri="wsdl/localhost_8080/ServidorWeb/GestionEscalaEvaluacionWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionIntegranteGrupo?WSDL" uri="wsdl/localhost_8080/ServidorWeb/GestionIntegranteGrupo.wsdl"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionIntegranteGrupo?xsd=1" uri="wsdl/localhost_8080/ServidorWeb/GestionIntegranteGrupo.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionIntegranteGrupoWS?WSDL" uri="wsdl/localhost_8080/ServidorWeb/GestionIntegranteGrupoWS.wsdl"/>
+    <system systemId="http://localhost:8080/ServidorWeb/GestionIntegranteGrupoWS?xsd=1" uri="wsdl/localhost_8080/ServidorWeb/GestionIntegranteGrupoWS.xsd_1.xsd"/>
+</catalog>

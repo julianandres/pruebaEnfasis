@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Home</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'/>
+        <script src="js/jquery-1.7.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/tms-0.4.x.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.slider')._TMS({
+                    show: 0,
+                    pauseOnHover: true,
+                    prevBu: false,
+                    nextBu: false,
+                    playBu: false,
+                    duration: 1000,
+                    preset: 'fade',
+                    pagination: true,
+                    pagNums: false,
+                    slideshow: 7000,
+                    numStatus: true,
+                    banners: 'fromRight',
+                    waitBannerAnimation: false,
+                    progressBar: false
+                })
+            });
+        </script>
+        <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+        <!--[if lt IE 9]>
+                    <script type="text/javascript" src="js/html5.js"></script>
+            <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+            <![endif]-->
+    </h:head>
+    <h:body>
+         <div class="main">
+            <!--==============================header=================================-->
+            <header>
+                <h1><a href="#{evaluadorMB.mostrarIndex()}"><img src="images/LogoSEIGC.png" width="300" alt=""/></a></h1>
+                <div class="form-search">
+                    <a href="#{evaluadorMB.mostrarIniciarSesion()}" class="button">Iniciar sesión</a>
+                    <a href="#{evaluadorMB.mostrarResgistrarse()}" class="button">Registrarse</a>
+                </div>    
+                <div class="clear"></div>    
+                <nav class="box-shadow">
+                    <div>
+                        <ul class="menu">
+                            <li class="home-page current"><a href="#{evaluadorMB.mostrarIndex()}"><span></span></a></li>
+                            <li><a href="#{evaluadorMB.mostrarAcercaDe()}">Acerca de SEIGC</a></li>
+                            <li><a href="#{evaluadorMB.mostrarServicios()}">Servicios</a></li>
+                            <li><a href="#{evaluadorMB.mostrarClientes()}">Clientes</a></li>
+                            <li><a href="#{evaluadorMB.mostrarContactanos()}">Contactanos</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </nav>
+            </header>   
+            <!--==============================content================================-->
+            <section id="content"><div class="ic"></div>
+                <div id="slide" class="box-shadow">		
+                    <div class="slider">
+                        <ul class="items">
+                            <li><img src="images/support.jpg" alt="" /><div class="banner">Ofrecemos la mejor herramienta de evaluación</div></li>
+                            <li><img src="images/ajedrez.jpg" alt="" /><div class="banner">Califica habilidades</div></li>
+                            <li><img src="images/slider-3.jpg" alt="" /><div class="banner">Se el mejor profesor</div></li>
+                        </ul>
+                    </div>	
+                </div>
+                <div class="container_12">
+                    <div class="grid_12">
+                        <div class="pad-0 border-1">
+                            <h2 class="top-1 p0">Servicio WEB para la evaluación de competencias</h2>
+                            <p class="p2"><B>SEIGC </B>(Servicio Web para la Evaluación Individual y Grupal de Competencias) es una plataforma/herramienta que te permitira evaluar de manera cualitativa a tus estudiantes. Los números y las calificaciones binarias quedaron atrás, las habilidades definen mejor a las personas. Conviertete en el mejor profesor!!! </p>
+                        </div>
+                        <div class="wrap block-1 pad-1">
+                            <div>
+                                <h3>Grupos</h3>
+                                <img src="images/grupos.jpg" alt="" class="img-border"/>
+                                <p>Crea tus propios grupos de estudiantes para evaluar.</p>
+                                <a href="#" class="button">Más...</a>
+                            </div>
+                            <div>
+                                <h3>Competencias</h3>
+                                <img src="images/competencias.jpg" alt="" class="img-border"/>
+                                <p>Genera las competencias que deseas evaluar a tus estudiantes</p>
+                                <a href="#" class="button">Más...</a>
+                            </div>
+                            <div class="last">
+                                <h3>Escalas</h3>
+                                <img src="images/escalas.jpg" alt="" class="img-border"/>
+                                <p>Incluye las mejores escalas de evaluación para las competencias</p>
+                                <a href="#" class="button">Más...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                 <div class="aside">
+                    <div class="container_12">	
+                        <div class="grid_12">
+                            <div class="pad-2 block-2 wrap">
+                                <div>
+                                    <h3 class="p3">Nosotros!</h3>
+                                    <p class="p4"> Estudiantes de ingeniería electrónica y telecomunicaciones de la Universidad del Cauca, cursando el noveno semestre.</p>
+                                    <a href="#" class="button">Más...</a>
+                                </div>
+                                <div class="last">
+                                    <h3 class="p3">UNICAUCA!</h3>
+                                    <p class="p4">La Universidad del Cauca es una institución de educación superior pública de carácter nacional con 187 años de historia.</p>
+                                    <a href="http://www.unicauca.edu.co/versionP/acerca-de-unicauca" class="button">Más...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>  
+            </section> 
+        </div>
+        <!--==============================footer=================================-->
+        <footer>
+            <p>Ingeniería Electrónica y Telecomunicaciones</p>
+            <p>Departamento de Telemática</p>
+            <p>Universidad del Cauca</p>            
+        </footer>
+    </h:body>
+</html>
+

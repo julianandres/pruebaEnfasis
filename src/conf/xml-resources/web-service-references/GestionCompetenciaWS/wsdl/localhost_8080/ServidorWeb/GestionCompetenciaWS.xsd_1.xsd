@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://logicaServicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://logicaServicios/">
+
+<xs:element name="consultarCompetencia" type="tns:consultarCompetencia"/>
+
+<xs:element name="consultarCompetenciaResponse" type="tns:consultarCompetenciaResponse"/>
+
+<xs:element name="crearCompetencia" type="tns:crearCompetencia"/>
+
+<xs:element name="crearCompetenciaResponse" type="tns:crearCompetenciaResponse"/>
+
+<xs:element name="editarCompetencia" type="tns:editarCompetencia"/>
+
+<xs:element name="editarCompetenciaResponse" type="tns:editarCompetenciaResponse"/>
+
+<xs:element name="eliminarCompetencia" type="tns:eliminarCompetencia"/>
+
+<xs:element name="eliminarCompetenciaResponse" type="tns:eliminarCompetenciaResponse"/>
+
+<xs:complexType name="consultarCompetencia">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoActividad" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarCompetenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarCompetencia">
+<xs:sequence>
+<xs:element name="codigoCompetenciaEditar" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoActividad" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarCompetenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarCompetencia">
+<xs:sequence>
+<xs:element name="codigoCompetenciaAEliminar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarCompetenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearCompetencia">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoActividad" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearCompetenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

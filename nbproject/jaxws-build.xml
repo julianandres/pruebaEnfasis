@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-GestionEvaluadorWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GestionEvaluadorWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GestionEvaluadorWS" destdir="${build.generated.dir}/jax-wsCache/GestionEvaluadorWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GestionEvaluadorWS/wsdl/localhost_8080/ServidorWeb/GestionEvaluadorWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ServidorWeb/GestionEvaluadorWS?WSDL" xnocompile="true" xendorsed="true" package="ws">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GestionEvaluadorWS/wsdl/localhost_8080/ServidorWeb/GestionEvaluadorWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GestionEvaluadorWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GestionEvaluadorWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GestionEvaluadorWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GestionEvaluadorWS"/>
+    </target>
+    <target name="wsimport-client-GestionCompetenciaWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GestionCompetenciaWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GestionCompetenciaWS" destdir="${build.generated.dir}/jax-wsCache/GestionCompetenciaWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GestionCompetenciaWS/wsdl/localhost_8080/ServidorWeb/GestionCompetenciaWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ServidorWeb/GestionCompetenciaWS?WSDL" xnocompile="true" xendorsed="true" package="wsCompetence">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GestionCompetenciaWS/wsdl/localhost_8080/ServidorWeb/GestionCompetenciaWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GestionCompetenciaWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GestionCompetenciaWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GestionCompetenciaWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wsCompetence"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GestionCompetenciaWS"/>
+    </target>
+    <target name="wsimport-client-GestionGrupoEvaluacionWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GestionGrupoEvaluacionWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GestionGrupoEvaluacionWS" destdir="${build.generated.dir}/jax-wsCache/GestionGrupoEvaluacionWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GestionGrupoEvaluacionWS/wsdl/localhost_8080/ServidorWeb/GestionGrupoEvaluacionWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ServidorWeb/GestionGrupoEvaluacionWS?WSDL" xnocompile="true" xendorsed="true" package="wsGrupo">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GestionGrupoEvaluacionWS/wsdl/localhost_8080/ServidorWeb/GestionGrupoEvaluacionWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GestionGrupoEvaluacionWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GestionGrupoEvaluacionWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GestionGrupoEvaluacionWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wsGrupo"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GestionGrupoEvaluacionWS"/>
+    </target>
+    <target name="wsimport-client-GestionActividadEvaluacionWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GestionActividadEvaluacionWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GestionActividadEvaluacionWS" destdir="${build.generated.dir}/jax-wsCache/GestionActividadEvaluacionWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GestionActividadEvaluacionWS/wsdl/localhost_8080/ServidorWeb/GestionActividadEvaluacionWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ServidorWeb/GestionActividadEvaluacionWS?WSDL" xnocompile="true" xendorsed="true" package="wsActividad">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GestionActividadEvaluacionWS/wsdl/localhost_8080/ServidorWeb/GestionActividadEvaluacionWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GestionActividadEvaluacionWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GestionActividadEvaluacionWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GestionActividadEvaluacionWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wsActividad"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GestionActividadEvaluacionWS"/>
+    </target>
+    <target name="wsimport-client-GestionEscalaEvaluacionWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GestionEscalaEvaluacionWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GestionEscalaEvaluacionWS" destdir="${build.generated.dir}/jax-wsCache/GestionEscalaEvaluacionWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GestionEscalaEvaluacionWS/wsdl/localhost_8080/ServidorWeb/GestionEscalaEvaluacionWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ServidorWeb/GestionEscalaEvaluacionWS?WSDL" xnocompile="true" xendorsed="true" package="wsEscala">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GestionEscalaEvaluacionWS/wsdl/localhost_8080/ServidorWeb/GestionEscalaEvaluacionWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GestionEscalaEvaluacionWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GestionEscalaEvaluacionWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GestionEscalaEvaluacionWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wsEscala"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GestionEscalaEvaluacionWS"/>
+    </target>
+    <target name="wsimport-client-GestionIntegranteGrupoWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GestionIntegranteGrupoWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GestionIntegranteGrupoWS" destdir="${build.generated.dir}/jax-wsCache/GestionIntegranteGrupoWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GestionIntegranteGrupoWS/wsdl/localhost_8080/ServidorWeb/GestionIntegranteGrupoWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ServidorWeb/GestionIntegranteGrupoWS?WSDL" xnocompile="true" xendorsed="true" package="wsIntegrante">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GestionIntegranteGrupoWS/wsdl/localhost_8080/ServidorWeb/GestionIntegranteGrupoWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GestionIntegranteGrupoWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GestionIntegranteGrupoWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GestionIntegranteGrupoWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wsIntegrante"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GestionIntegranteGrupoWS"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-GestionEvaluadorWS, wsimport-client-GestionCompetenciaWS, wsimport-client-GestionGrupoEvaluacionWS, wsimport-client-GestionActividadEvaluacionWS, wsimport-client-GestionEscalaEvaluacionWS, wsimport-client-GestionIntegranteGrupoWS"/>
+</project>

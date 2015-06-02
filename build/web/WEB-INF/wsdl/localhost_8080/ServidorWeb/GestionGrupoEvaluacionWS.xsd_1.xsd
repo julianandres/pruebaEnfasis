@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://logicaServicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://logicaServicios/">
+
+<xs:element name="agregarCompetenciaAGrupo" type="tns:agregarCompetenciaAGrupo"/>
+
+<xs:element name="agregarCompetenciaAGrupoResponse" type="tns:agregarCompetenciaAGrupoResponse"/>
+
+<xs:element name="consultarCompetenciasDeUnGrupo" type="tns:consultarCompetenciasDeUnGrupo"/>
+
+<xs:element name="consultarCompetenciasDeUnGrupoResponse" type="tns:consultarCompetenciasDeUnGrupoResponse"/>
+
+<xs:element name="consultarCompetenciasNoEstanEnGrupo" type="tns:consultarCompetenciasNoEstanEnGrupo"/>
+
+<xs:element name="consultarCompetenciasNoEstanEnGrupoResponse" type="tns:consultarCompetenciasNoEstanEnGrupoResponse"/>
+
+<xs:element name="consultarGrupoEvaluacion" type="tns:consultarGrupoEvaluacion"/>
+
+<xs:element name="consultarGrupoEvaluacionResponse" type="tns:consultarGrupoEvaluacionResponse"/>
+
+<xs:element name="consultarIntegrantesAsignadosAGrupo" type="tns:consultarIntegrantesAsignadosAGrupo"/>
+
+<xs:element name="consultarIntegrantesAsignadosAGrupoResponse" type="tns:consultarIntegrantesAsignadosAGrupoResponse"/>
+
+<xs:element name="consultarIntegrantesQueNoPertenecenAGrupo" type="tns:consultarIntegrantesQueNoPertenecenAGrupo"/>
+
+<xs:element name="consultarIntegrantesQueNoPertenecenAGrupoResponse" type="tns:consultarIntegrantesQueNoPertenecenAGrupoResponse"/>
+
+<xs:element name="crearGrupoEvaluacion" type="tns:crearGrupoEvaluacion"/>
+
+<xs:element name="crearGrupoEvaluacionResponse" type="tns:crearGrupoEvaluacionResponse"/>
+
+<xs:element name="editarGrupoEvaluacion" type="tns:editarGrupoEvaluacion"/>
+
+<xs:element name="editarGrupoEvaluacionResponse" type="tns:editarGrupoEvaluacionResponse"/>
+
+<xs:element name="eliminarGrupoEvaluacion" type="tns:eliminarGrupoEvaluacion"/>
+
+<xs:element name="eliminarGrupoEvaluacionResponse" type="tns:eliminarGrupoEvaluacionResponse"/>
+
+<xs:element name="removerCompetenciaDeGrupo" type="tns:removerCompetenciaDeGrupo"/>
+
+<xs:element name="removerCompetenciaDeGrupoResponse" type="tns:removerCompetenciaDeGrupoResponse"/>
+
+<xs:complexType name="consultarGrupoEvaluacion">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="codigosCompetenciasObjetivo" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="codEvaluador" type="xs:string" minOccurs="0"/>
+<xs:element name="codigosIntegrantesGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarGrupoEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarGrupoEvaluacion">
+<xs:sequence>
+<xs:element name="codigoGrupoAEditar" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="codigosCompetenciasObjetivo" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="codEvaluador" type="xs:string" minOccurs="0"/>
+<xs:element name="codigosIntegrantesGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarGrupoEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarIntegrantesQueNoPertenecenAGrupo">
+<xs:sequence>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarIntegrantesQueNoPertenecenAGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarIntegrantesAsignadosAGrupo">
+<xs:sequence>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEvaluador" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarIntegrantesAsignadosAGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removerCompetenciaDeGrupo">
+<xs:sequence>
+<xs:element name="codigoCompetencia" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removerCompetenciaDeGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarGrupoEvaluacion">
+<xs:sequence>
+<xs:element name="codigoGrupoAEliminar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarGrupoEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarCompetenciasDeUnGrupo">
+<xs:sequence>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarCompetenciasDeUnGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarCompetenciasNoEstanEnGrupo">
+<xs:sequence>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarCompetenciasNoEstanEnGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearGrupoEvaluacion">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="codigosCompetenciasObjetivo" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="codEvaluador" type="xs:string" minOccurs="0"/>
+<xs:element name="codigosIntegrantesGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearGrupoEvaluacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarCompetenciaAGrupo">
+<xs:sequence>
+<xs:element name="codigoCompetencia" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarCompetenciaAGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
